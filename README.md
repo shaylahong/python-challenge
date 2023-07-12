@@ -8,6 +8,6 @@ In the first section of the challenge, PyBank, we are required to develop a Pyth
 
 The second component of this challenge is PyPoll; the requirement here is to develop a Python script that seeks to modernises a small U.S town's vote-counting process. Similar to PyBank, the data is retrieved from a CSV file titled 'election_data.csv' to provide the information necessary. To do that, we are required to find: the total number of votes cast; a complete list of candidates who received votes; the percentage of votes each candidate won; and, the winner of the election based on popular vote. 
 
-Decimatal points: https://stackoverflow.com/questions/455612/limiting-floats-to-two-decimal-points 
+Decimal points: https://stackoverflow.com/questions/455612/limiting-floats-to-two-decimal-points 
 
 Maximum/Minimum value: https://stackoverflow.com/questions/47124817/trying-to-get-the-largest-number-in-a-column-of-a-csv-file
