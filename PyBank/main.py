@@ -47,7 +47,7 @@ with open(budget_data) as csvfile:
     file_to_output = os.path.join("PyBank", "Analysis", "PyBank_Results.txt")
     with open(file_to_output, "w") as txt_file:
         txt_file.write("Financial Analysis\n")
-        txt_file.write("-------------------------")
+        txt_file.write("-------------------------\n")
         txt_file.write(f"Total Months: {total_months}\n")
         txt_file.write(f"Net Total Amount: ${net_profit_losses}\n")
         txt_file.write(f"Average Change: ${average_change: .2f}\n")
