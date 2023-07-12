@@ -23,6 +23,7 @@ with open(election_data) as csvfile:
             candidate_votes[candidate] = 1 
         else:
             candidate_votes[candidate] += 1 
+
 print("Election Results")
 print("-------------------------")
 print(f"Total Votes: {total_votes}")
