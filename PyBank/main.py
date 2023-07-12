@@ -2,8 +2,10 @@
 import os
 import csv
 
+# path to dataset 
 budget_data = os.path.join("PyBank", "Resources", "budget_data.csv")
  
+# read csv file and analyse data 
 with open(budget_data) as csvfile:
     budget_data_reader = csv.reader(csvfile, delimiter=',')
     csv_header = next(budget_data_reader)
@@ -34,6 +36,7 @@ with open(budget_data) as csvfile:
     
     #print to terminal 
     print("Financial Analysis")
+    print("-------------------------")
     print(f"Total Months: {total_months}")
     print(f"Net Total Amount: ${net_profit_losses}")
     print(f"Average Change: ${average_change: .2f}")
@@ -44,6 +47,7 @@ with open(budget_data) as csvfile:
     file_to_output = os.path.join("PyBank", "Analysis", "PyBank_Results.txt")
     with open(file_to_output, "w") as txt_file:
         txt_file.write("Financial Analysis\n")
+        txt_file.write("-------------------------")
         txt_file.write(f"Total Months: {total_months}\n")
         txt_file.write(f"Net Total Amount: ${net_profit_losses}\n")
         txt_file.write(f"Average Change: ${average_change: .2f}\n")
